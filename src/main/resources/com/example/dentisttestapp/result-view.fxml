@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="450.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dentisttestapp.ResultController">
+   <children>
+      <Label layoutX="38.0" layoutY="95.0" prefHeight="27.0" prefWidth="184.0" text="Результаты расчета">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="38.0" layoutY="130.0" prefHeight="20.0" prefWidth="302.0" text="Дата проведения расчета:   ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="165.0" prefHeight="27.0" prefWidth="342.0" text="Вероятность развития болезней периодонта X =">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultLabel" layoutX="380.0" layoutY="165.0" prefHeight="18.0" prefWidth="34.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="description" alignment="TOP_LEFT" layoutX="38.0" layoutY="215.0" prefHeight="149.0" prefWidth="374.0" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXButton fx:id="printBtn" buttonType="RAISED" layoutX="102.0" layoutY="369.0" onAction="#onPrintButtonClick" prefHeight="39.0" prefWidth="245.0" ripplerFill="WHITE" style="-fx-background-color: #19cabe;" text="Сохранить данные в PDF" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="name" layoutX="38.0" layoutY="33.0" prefHeight="35.0" prefWidth="374.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="462.0" prefHeight="58.0" prefWidth="410.0" text="МЗ РБ  &quot;Метод определения вероятности развития болезней периодонта&quot;" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

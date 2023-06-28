@@ -1,0 +1,26 @@
+.jfx-combo-box {
+    -fx-text-inner-color: #25615a;
+    -fx-prompt-text-fill: #25615a;
+    -fx-font-size : 12pt;
+}
+
+.jfx-combo-box .cell {
+    -fx-text-fill: #25615a;
+}
+
+.jfx-text-field{
+    -fx-text-inner-color: #25615a;
+    -fx-prompt-text-fill: #8aa4a1;
+     -fx-font-size : 12pt;
+}
+
+
+.combo-box .cell:hover {
+   -fx-background-color: #19cabe;
+   -fx-text-fill: white;
+}
+
+.combo-box .cell:selected {
+    -fx-background-color: #19cabe;
+    -fx-text-fill: white;
+}

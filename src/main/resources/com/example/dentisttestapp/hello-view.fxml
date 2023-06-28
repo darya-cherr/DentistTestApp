@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="850.0" style="-fx-background-image: url(&quot;bg.png&quot;);" styleClass="unique" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dentisttestapp.HelloController">
+   <children>
+      <JFXTextField fx:id="name" focusColor="#19cabe" layoutX="44.0" layoutY="59.0" prefHeight="26.0" prefWidth="362.0" promptText="Иван Иванов" unFocusColor="#5db7ad" />
+      <JFXComboBox fx:id="gender" focusColor="#19cabe" layoutX="44.0" layoutY="134.0" prefHeight="28.0" prefWidth="362.0" style="-fx-text-fill: #25615a;" unFocusColor="#5db7ad" />
+      <Label layoutX="44.0" layoutY="39.0" text="ФИО" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="114.0" text="Пол" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="age" focusColor="#19cabe" layoutX="44.0" layoutY="216.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="44.0" layoutY="196.0" text="Возраст" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="smoking" focusColor="#19cabe" layoutX="44.0" layoutY="300.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="44.0" layoutY="280.0" text="Курение(А)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="diabetes" focusColor="#19cabe" layoutX="44.0" layoutY="386.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="44.0" layoutY="366.0" text="Диабетический статус (В)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="boneLoss" focusColor="#19cabe" layoutX="442.0" layoutY="55.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="442.0" layoutY="35.0" prefWidth="387.0" text="Потеря костной ткани (D). Кол-во зубов с ЭЦГ-КГ ≥4 мм" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="lossOfDentalAttachment" focusColor="#19cabe" layoutX="439.0" layoutY="134.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="439.0" layoutY="114.0" text="Потеря зубодесневого прикрепления в области зубов (E)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="pocketsNumber" focusColor="#19cabe" layoutX="441.0" layoutY="216.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="442.0" layoutY="186.0" text="Количество карманов ≥5 мм (F)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="destructiveTeethNumber" focusColor="#19cabe" layoutX="439.0" layoutY="300.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label layoutX="442.0" layoutY="280.0" text="Количество зубов с очагами деструкции (G)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="microorganismsPresence" focusColor="#19cabe" layoutX="439.0" layoutY="388.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label ellipsisString="" graphicTextGap="1.0" layoutX="441.0" layoutY="346.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="362.0" text="Наличие периодонтопатогенных микроорганизмов -отдельные представители (H)" textFill="#25615a" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="microorganismsAssociationsPresence" focusColor="#19cabe" layoutX="441.0" layoutY="474.0" prefHeight="28.0" prefWidth="362.0" style="-fx-text-inner-color: #25615a;" unFocusColor="#5db7ad" />
+      <Label layoutX="441.0" layoutY="454.0" text="Наличие ассоциаций микроорганизмов (I)" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="resultBtn" buttonType="RAISED" layoutX="330.0" layoutY="548.0" onAction="#onResultButtonClick" prefHeight="43.0" prefWidth="189.0" ripplerFill="WHITE" style="-fx-background-color: #19cabe;" text="Результаты" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="bleeding" focusColor="#19cabe" layoutX="44.0" layoutY="474.0" prefHeight="28.0" prefWidth="362.0" unFocusColor="#5db7ad" />
+      <Label ellipsisString="" layoutX="44.0" layoutY="432.0" prefHeight="43.0" prefWidth="362.0" text="Кровоточивость десны в области зубов при зондировании (C)" textFill="#25615a" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="617.0" prefHeight="20.0" prefWidth="536.0" text="МЗ РБ  &quot;Метод определения вероятности развития болезней периодонта&quot;" textFill="#25615a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
